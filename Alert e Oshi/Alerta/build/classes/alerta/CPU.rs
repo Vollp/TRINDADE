@@ -1,0 +1,2 @@
+alert.CPU
+Alerta.CPU
