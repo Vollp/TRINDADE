@@ -1,2 +1,0 @@
-alert.HD
-Alerta.HD

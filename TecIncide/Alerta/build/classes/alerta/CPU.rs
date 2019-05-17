@@ -1,2 +1,0 @@
-alert.CPU
-Alerta.CPU

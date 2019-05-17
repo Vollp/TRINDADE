@@ -1,2 +1,0 @@
-alert.Alerta
-Alerta.Alerta
