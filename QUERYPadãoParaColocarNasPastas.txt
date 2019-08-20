@@ -1,0 +1,138 @@
+SELECT DISTINCT
+		 code AS IDENTIFICADOR,
+		 telephone AS NUMERO_TELEFONE,
+		 reference_at AS DATA_LIGACAO,
+		 agent_name AS AGENTE,
+		 agent_id AS AGENTE_ID,
+		 (
+			CASE
+				 WHEN (ds_call_type  = 'ABANDONADO') THEN 'ABANDONADA'
+				 ELSE ds_call_type
+			 END) AS ESTADO,
+		 service_id AS SERVICE_ID,
+		 waiting_time AS TEMPO_ESPERA,
+		 attendance_time AS TEMPO_ATENDIMENTO,
+		 service_name AS SERVICO,
+		 reference AS IP_SVX,
+		 contrato_webservice AS WEBSERVICE,
+		 telefonia.contrato AS CONTRATO,
+		 atendido_abandono AS ABANDONO_FLAG,
+		 
+			case
+				 WHEN ds_call_type  in ( 'ATENDIDA'  , 'COMPLETADA POR AGENTE'  , 'COMPLETADA POR CLIENTE'  , 'TRANSFERENCIA'  , 'TRANSFERIDA'  ) THEN 1
+				 when ds_call_type  in ( 'ABANDONADA'  , 'ABANDONADO'  ) THEN 0
+			 END AS count_atendida,
+		 
+			case
+				 WHEN agent_name  = 'URA LOTÉRICOS CTI'
+				 AND	ds_call_type  = 'ATENDIDA' THEN 1
+				 ELSE 0
+			 END AS contador_cti,
+		 
+			CASE
+				 WHEN atendido_abandono  = 1 THEN 0
+				 WHEN atendido_abandono  = 0 THEN 100
+				 ELSE 0
+			 END AS FORMAT_ABANDONO_FLAG,
+		 
+			CASE
+				 WHEN ds_call_type  in ( 'ABANDONADA'  , 'ABANDONADO'  )
+				 AND	waiting_time  <= valor_abandono THEN 0
+				 ELSE 1
+			 END AS FORMAT_DESISTENTE_FLAG,
+		 1 -(1 * atendido_abandono) AS COUNT_ABANDONO_FLAG,
+		 100 * atendido_nivel_servico AS NS_FLAG,
+		 
+			CASE
+				 WHEN SUBSTRING_INDEX(service_name, '/', 1)  = 'D' THEN 'DEDICADO'
+				 WHEN SUBSTRING_INDEX(service_name, '/', 1)  = 'C' THEN 'COMPARTILHADO'
+				 WHEN SUBSTRING_INDEX(service_name, '/', 1)  = 'S' THEN 'SINERGIA'
+				 ELSE 'NAO INFORMADO'
+			 END AS EQUIPE,
+		 SUBSTRING_INDEX(service_name, '/', 1) AS SIGLA_EQUIPE,
+		 SUBSTRING_INDEX(SUBSTRING_INDEX(service_name, '/', 2), '/', -1) AS SIGLA_CLIENTE,
+		 SUBSTRING_INDEX(service_name, '/', -1) AS SIGLA_SERVICO,
+		 config.ge AS GE,
+		 config.gs AS GS,
+		 config.go AS GO,
+		 config.coordenador as COORDENADOR,
+		 config.localidade as LOCALIDADE,
+		 valor as VALOR,
+		 valor_abandono as VALOR_ABANDONO,
+		 Metas.NS AS Meta_NS,
+		 Metas.ABANDONO AS Meta_ABAND,
+		 Metas.TMA AS Meta_TMA,
+		 Metas.TME AS Meta_TME,
+		 Metas.NS2 AS Meta_NS2,
+		 Metas.TME2 AS Meta_TME2,
+		 
+			CASE
+				 WHEN "attendance_time"  <= '10' THEN '1'
+				 ELSE '0'
+			 END AS SHORTCALL,
+		 
+			case
+				 when WEEKDAY(reference_at)  = 0 then 'mon'
+				 when WEEKDAY(reference_at)  = 1 then 'tue'
+				 when WEEKDAY(reference_at)  = 2 then 'wed'
+				 when WEEKDAY(reference_at)  = 3 then 'thu'
+				 when WEEKDAY(reference_at)  = 4 then 'fri'
+				 when WEEKDAY(reference_at)  = 5 then 'sat'
+				 when WEEKDAY(reference_at)  = 6 then 'sun'
+				 else '0'
+			 end as WEEKDAY,
+		 "atendido_abandono" as ESTADO_CHAMADA,
+		 '1' as CONTADOR,
+		 
+			CASE
+				 WHEN ("waiting_time"  <= "valor"
+				 AND	"ds_call_type"  = 'ATENDIDA') THEN 'NS OK'
+				 WHEN ("waiting_time"  <= "valor"
+				 AND	"ds_call_type"  = 'COMPLETADA POR AGENTE') THEN 'NS OK'
+				 WHEN ("waiting_time"  <= "valor"
+				 AND	"ds_call_type"  = 'COMPLETADA POR CLIENTE') THEN 'NS OK'
+				 WHEN ("waiting_time"  <= "valor"
+				 AND	"ds_call_type"  = 'TRANSFERENCIA') THEN 'NS OK'
+				 WHEN ("waiting_time"  <= "valor"
+				 AND	"ds_call_type"  = 'TRANSFERIDA') THEN 'NS OK'
+				 ELSE 'NS NOK'
+			 END AS "ATENDIDA_NS",
+		 
+			CASE
+				 WHEN ("ds_call_type"  = 'COMPLETADA POR AGENTE') THEN 'ATENDIDAS'
+				 WHEN ("ds_call_type"  = 'COMPLETADA POR CLIENTE') THEN 'ATENDIDAS'
+				 WHEN ("waiting_time"  > "valor_abandono"
+				 AND	"ds_call_type"  = 'ABANDONADA') THEN 'ABANDONADAS'
+				 WHEN ("waiting_time"  > "valor_abandono"
+				 AND	"ds_call_type"  = 'ABANDONADO') THEN 'ABANDONADAS'
+				 ELSE 'DESISTÊNCIAS'
+			 END AS "ABANDONO_TX",
+		 
+			CASE
+				 WHEN ("ds_call_type"  = 'COMPLETADA POR AGENTE') THEN 'ATENDIDAS'
+				 WHEN ("ds_call_type"  = 'COMPLETADA POR CLIENTE') THEN 'ATENDIDAS'
+				 WHEN ("waiting_time"  <= "valor_abandono"
+				 AND	"ds_call_type"  = 'ABANDONADA') THEN 'ABANDONADAS'
+				 WHEN ("waiting_time"  <= "valor_abandono"
+				 AND	"ds_call_type"  = 'ABANDONADO') THEN 'ABANDONADAS'
+				 ELSE 'DESISTÊNCIAS'
+			 END AS "DESISTENTE_TX",
+		 
+			CASE
+				 WHEN (telefonia.contrato  = TorreN1_Expurgos.contrato
+				 AND	"reference_at"  >= TorreN1_Expurgos."DATA E HORÁRIO DE INÍCIO DO INCIDENTE"
+				 AND	"reference_at"  <= TorreN1_Expurgos."DATA E HORÁRIO DE TÉRMINO DO INCIDENTE") THEN 1
+				 ELSE 0
+			 END AS "EXPURGO"
+FROM  telefonia
+LEFT JOIN config ON (telefonia.contrato  = config.contrato) 
+LEFT JOIN Metas ON (telefonia.contrato  = Metas.Contrato) 
+LEFT JOIN TorreN1_Expurgos ON (telefonia.contrato  = TorreN1_Expurgos.Contrato
+	 AND	telefonia.reference_at  BETWEEN TorreN1_Expurgos."DATA E HORÁRIO DE INÍCIO DO INCIDENTE"  AND  TorreN1_Expurgos."DATA E HORÁRIO DE TÉRMINO DO INCIDENTE")  
+WHERE	 /* config.contrato  = 0
+ AND	*/ config.ativo  = 1
+
+
+
+
+FLEURY E TICKET 
