@@ -3,6 +3,7 @@ parte de filtros DOCUMENTAR TUDO
 qual filtros ?
 tirar print e colocar na documentação
 cada dashboard que fiz - um documento
+escrever logo a baixo do Title de Filtros do Arquivo 
  
 Dashboards que precisam de documentação 
 
