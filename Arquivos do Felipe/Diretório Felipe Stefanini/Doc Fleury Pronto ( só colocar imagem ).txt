@@ -4,23 +4,23 @@ GRÁFICOS DA FLEURY
 
 		Tipo de Gráfico : Pizza
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: abandono_tx ( real )
+ - Eixo x: abandono_tx ( real )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
@@ -29,24 +29,24 @@ Digitar: Este Mês
 
 		Tipo de Gráfico : Barras
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligaçao ( mês e ano )
-2 - Cor: abandono_tx ( real )
+ - Eixo x: data_ligaçao ( mês e ano )
+ - Cor: abandono_tx ( real )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Últimos 3 meses
@@ -56,23 +56,23 @@ Digitar: Últimos 3 meses
 
 		Tipo de Gráfico : Pizza
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: atendida_ns ( real )
+ - Eixo x: atendida_ns ( real )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
@@ -82,25 +82,25 @@ Digitar: Este Mês
 
 		Tipo de Gráfico : Barras
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligacao ( mês e ano )
-2 - Eixo y: tempo_espera ( média - normal )
-3 - Eixo y: tempo_atendimento ( média - normal )
+ - Eixo x: data_ligacao ( mês e ano )
+ - Eixo y: tempo_espera ( média - normal )
+ - Eixo y: tempo_atendimento ( média - normal )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Últimos 3 meses
@@ -109,25 +109,25 @@ Digitar: Últimos 3 meses
 
 		Tipo de Gráfico : Linhas
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligacao ( dia do mês )
-2 - Eixo y: tempo_espera ( média - normal )
-3 - Eixo y: tempo_atendimento ( média - normal )
+ - Eixo x: data_ligacao ( dia do mês )
+ - Eixo y: tempo_espera ( média - normal )
+ - Eixo y: tempo_atendimento ( média - normal )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
@@ -136,26 +136,26 @@ Digitar: Este Mês
 
 		Tipo de Gráfico : Barras
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligacao ( hora do dia )
-2 - Eixo y: identificador ( contagem - normal )
-3 - Eixo y: tempo_espera ( média - normal )
-4 - Eixo y: tempo_atendimento ( média - normal )
+ - Eixo x: data_ligacao ( hora do dia )
+ - Eixo y: identificador ( contagem - normal )
+ - Eixo y: tempo_espera ( média - normal )
+ - Eixo y: tempo_atendimento ( média - normal )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
@@ -165,24 +165,24 @@ Digitar: Este Mês
 
 		Tipo de Gráfico : Linhas
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligacao ( dia do mês )
-2 - Cor: abandono_tx ( real )
+ - Eixo x: data_ligacao ( dia do mês )
+ - Cor: abandono_tx ( real )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
@@ -192,24 +192,24 @@ Digitar: Este Mês
 
 		Tipo de Gráfico : Barras empilhadas
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligacao ( dia do mês )
-2 - Cor: atendidas_ns ( real )
+ - Eixo x: data_ligacao ( dia do mês )
+ - Cor: atendidas_ns ( real )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
@@ -219,24 +219,24 @@ Digitar: Este Mês
 
 		Tipo de Gráfico : Barras empilhadas
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligacao ( dia da semana )
-2 - Cor: abandono_tx ( real )
+ - Eixo x: data_ligacao ( dia da semana )
+ - Cor: abandono_tx ( real )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
@@ -246,24 +246,24 @@ Digitar: Este Mês
 
 		Tipo de Gráfico : Barras empilhadas
 
-* Filtros dentro da área do "Gráfico"
+	1 - Filtros dentro da área do "Gráfico"
 
-1 - Eixo x: data_ligacao ( hora do dia )
-2 - Cor: abandono_tx ( real )
+ - Eixo x: data_ligacao ( hora do dia )
+ - Cor: abandono_tx ( real )
 
-* Filtros dentro da área de "Filtros do usuários"
+	2 - Filtros dentro da área de "Filtros do usuários"
 
-1 - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
-2 - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
+ - data_ligacao ( Este Mês ) clicar em editar e ir ao passo 2
+ - tipo de componentes ( Período Relativo ) - ( Caixa de Seleção Múltipla )
 
-3 - Escolher Valores : Caixa de opção - Mês
+	3 - Escolher Valores : Caixa de opção - Mês
 
-4 - Selecionar Valores dentro da opção Mês:
+	4 - Selecionar Valores dentro da opção Mês:
 
-1 - Este Mês
-2 - Mês anterior
-3 - Últimos 3 meses
-4 - Últimos 6 meses
+ - Este Mês
+ - Mês anterior
+ - Últimos 3 meses
+ - Últimos 6 meses
 
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
