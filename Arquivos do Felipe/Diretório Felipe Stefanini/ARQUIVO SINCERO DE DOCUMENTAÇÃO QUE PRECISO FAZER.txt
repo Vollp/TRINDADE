@@ -7,8 +7,8 @@ escrever logo a baixo do Title de Filtros do Arquivo
  
 Dashboards que precisam de documentação 
 
-ticket - pronto 
-atlas
-fleury - pronto 
-banco pan 
-estapar 
+ticket - Pronto 
+atlas - Pronto
+fleury - Pronto 
+banco pan - 
+estapar - Pronto

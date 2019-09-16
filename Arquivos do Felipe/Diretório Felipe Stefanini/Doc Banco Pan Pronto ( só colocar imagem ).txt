@@ -1,4 +1,5 @@
-GRÁFICOS DA ATLAS
+Banco Pan 
+
 
 			Gráfico - ACUMULADO ABANDONO
 
@@ -27,7 +28,7 @@ Digitar: Este Mês
 
 			Gráfico - ACUMULADO LIGAÇÕES
 
-		Tipo de Gráfico : Barras
+		Tipo de Gráfico : Barras empilhadas
 
 	1 - Filtros dentro da área do "Gráfico"
 
@@ -157,19 +158,6 @@ Digitar: Este Mês
  - Últimos 3 meses
  - Últimos 6 meses
 
-	5 - Escolher Valores : Caixa de opção - Dia
-
-	6 - Selecionar Valores dentro da opção Dia:
-- Hoje 
-- Ontem
-
-	7 - Escolher Valores : Caixa de opção - Semanas
-
-	8 - Selecionar Valores dentro da opção Semanas:
-
-- Esta Semana 
-- Semana Anterior
-
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
 
@@ -203,7 +191,7 @@ Digitar: Este Mês
 
 			Gráfico - EVOLUTIVO NÍVEL DE SERVIÇO
 
-		Tipo de Gráfico : Barras empilhadas
+		Tipo de Gráfico : Barras
 
 	1 - Filtros dentro da área do "Gráfico"
 
@@ -251,13 +239,6 @@ Digitar: Este Mês
  - Últimos 3 meses
  - Últimos 6 meses
 
-	5 - Escolher Valores : Caixa de opção - Semanas
-
-	6 - Selecionar Valores dentro da opção Semanas:
-
-- Esta Semana
-- Semana anterior
-
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
 
@@ -284,21 +265,6 @@ Digitar: Este Mês
  - Mês anterior
  - Últimos 3 meses
  - Últimos 6 meses
-
-	5 - Escolher Valores : Caixa de opção - Dia
-
-	6 - Selecionar Valores dentro da opção Dia:
-- Hoje 
-- Ontem
-
-	7 - Escolher Valores : Caixa de opção - Semanas
-
-	8 - Selecionar Valores dentro da opção Semanas:
-
-- Esta Semana 
-- Semana Anterior
-
-
 	
 Especifique os valores do filtro padrão :
 Digitar: Este Mês
