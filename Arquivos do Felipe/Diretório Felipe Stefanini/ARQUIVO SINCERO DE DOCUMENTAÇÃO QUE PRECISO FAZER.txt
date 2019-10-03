@@ -10,5 +10,7 @@ Dashboards que precisam de documentação
 ticket - Pronto 
 atlas - Pronto
 fleury - Pronto 
-banco pan - 
+banco pan - pronto 
 estapar - Pronto
+odontoprev - 
+a.c camargo - 
