@@ -131,8 +131,3 @@ LEFT JOIN TorreN1_Expurgos ON (telefonia.contrato  = TorreN1_Expurgos.Contrato
 	 AND	telefonia.reference_at  BETWEEN TorreN1_Expurgos."DATA E HORÁRIO DE INÍCIO DO INCIDENTE"  AND  TorreN1_Expurgos."DATA E HORÁRIO DE TÉRMINO DO INCIDENTE")  
 WHERE	 /* config.contrato  = 0
  AND	*/ config.ativo  = 1
-
-
-
-
-FLEURY E TICKET 
