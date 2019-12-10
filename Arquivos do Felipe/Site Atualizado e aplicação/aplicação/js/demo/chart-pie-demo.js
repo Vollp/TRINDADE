@@ -13,8 +13,10 @@ var myPieChart = new Chart(ctx, {
         datasets: [{
             //valores vindo do banco ou de uma query
             data: [45, 24, 12],
-            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+            //cor da parte da dashboard de relatorio
+            backgroundColor: ['#d81414', '#1cc88a', '#30dbd3'],
+            //cor quando vc clica em cima da parte da dashboard de relatorio
+            hoverBackgroundColor: ['#d81414', '#17a673', '#2c9faf'],
             hoverBorderColor: "rgba(234, 236, 244, 1)",
         }],
     },
