@@ -1,0 +1,85 @@
+body {
+    background:white
+    }
+    .centered {
+    margin: 50px auto;
+    text-align: center
+    }
+    .button::-moz-focus-inner {
+    border: 0;
+    padding: 0
+    }
+    .button {
+    padding: 6px 20px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid rgb(187, 187, 187);
+    overflow: visible;
+    font: bold 13px arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: rgb(85, 85, 85);
+    background-color: rgb(221, 221, 221)
+    }
+    .button:hover {
+    background-color: rgb(238, 238, 238);
+    color: rgb(85, 85, 85)
+    }
+    .button:active {
+    background: rgb(233, 233, 233);
+    top: 1px;
+    text-shadow: none
+    }
+    .button[disabled], .button[disabled]:hover, .button[disabled]:active {
+    border-color: rgb(234, 234, 234);
+    background: rgb(250, 250, 250);
+    cursor: default;
+    position: static;
+    color: rgb(153, 153, 153);
+    text-shadow: none !important
+    }
+    .button.small {
+    padding: 4px 12px
+    }
+    .button.large {
+    padding: 12px 30px;
+    text-transform: uppercase
+    }
+    .button.large:active {
+    top: 2px
+    }
+    .button.green, .button.red, .button.blue {
+    color: rgb(255, 255, 255)
+    }
+    
+    .button.red {
+        /*cor do button */
+    background-color: rgb(70,130,180);
+    /* cor das bordas do button */
+    border-color: rgb(53, 156, 196)
+    }
+    .button.red:active {
+        /*reação de cor quando se clica no button*/
+    background: rgb(24, 174, 233)
+    }
+    .red[disabled], .red[disabled]:hover, .red[disabled]:active {
+    border-color: rgb(196, 60, 53);
+    background: rgb(196, 60, 53);
+    color: rgb(255, 211, 211)
+    }
+    .button-group, .button-group li { }
+    .button-group {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    padding: 7px
+    }
+    .button-group li { }
+    .button-group .button {
+    font-size: 13px
+    }
+    .button-group .button:active { }
+    .button-group li:first-child .button { }
+    .button-group li:first-child .button:active { }
+    .button-group li:last-child .button { }
+    .button-group li:last-child .button:active { }
